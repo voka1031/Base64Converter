@@ -2,7 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>Tools</groupId>
+	<groupId>vok.software</groupId>
 	<artifactId>Base64Converter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
@@ -23,7 +23,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.main.Base64Converter</mainClass> <!-- main類別的full qualified name -->
+							<mainClass>com.main.Base64Converter</mainClass> <!-- main class full qualified name -->
 						</manifest>
 					</archive>
 				</configuration>
