@@ -1,7 +1,7 @@
 package com.main;
 
-import static com.main.CommonUtil.base64Decode;
-import static com.main.CommonUtil.base64Encode;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -140,5 +140,14 @@ public class Base64Converter extends Application {
 		button.setStyle("-fx-font-size:16");
 		return button;
 	}
+	
+	public static String base64Decode(String content) {
+		return new String(Base64.getDecoder().decode(content), StandardCharsets.UTF_8);
+	}
+
+	public static String base64Encode(String content) {
+		return Base64.getEncoder().encodeToString(content.getBytes(StandardCharsets.UTF_8));
+	}
+
 
 }
